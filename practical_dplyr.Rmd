@@ -1,0 +1,83 @@
+---
+title: "My answers"
+author: "My name"
+date: "17 Oct 2022"
+output: html_document
+---
+
+```{r setup, include = FALSE}
+library(tidyverse)
+```
+
+### Judgment - part one
+
+This short tutorial will allow you to explore `dplyr` functionality based on the previous lecture. Every question can be answered with a combination of `%>%` pipes. You should refrain from using temporary variables and statements outside of the range of the tidyverse.
+
+The first part does not require joins or pivots.
+
+##### Import the [data from the website](https://biostat2.uni.lu/practicals/data/judgments.tsv).
+
+Assign to the name `judgments`
+
+```{r}
+# Write your answer here
+```
+
+##### Use `glimpse()` to identify columns and column types.
+
+##### Select all columns that refer to the STAI questionnaire
+
+```{r}
+# Write your answer here
+```
+
+##### Select all subjects older than 25
+
+```{r}
+# Write your answer here
+```
+
+##### Retrieve all subjects younger than 20 which are in the stress group
+
+The column for the group is `condition`.
+
+```{r}
+# Write your answer here
+```
+
+##### Abbreviate the gender column such that only the first character remains.
+Create a new column in the process.
+
+```{r}
+# Write your answer here
+```
+
+##### Normalize the values in the REI group
+
+Divide all entries in the REI questionnaire by 5, the maximal value.
+
+```{r}
+# Write your answer here
+```
+
+##### Find the moral dilemma with the highest average score across all participants.
+
+```{r}
+# Write your answer here
+```
+
+##### Identify the highest score and the lowest sum of REI scorees per participant.
+Your result should be a single tible with one row and two columns.
+
+Hint: You need to consider that some parts of the calculations have to done per participant, others are summarising for the complete data set.
+```{r}
+# Write your answer here
+```
+
+##### Find the *moral dilemma* with the highest average score and the highest median score across all participants.
+Compute the median and the mean.
+
+```{r}
+# Write your answer here
+```
+
